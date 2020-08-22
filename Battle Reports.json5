@@ -14,7 +14,7 @@
 					"1": "US",  // Team 1 faction
 					"2": "RU"   // Team 2 faction
 				},
-				"mapVariant": 0,
+				"mapVariant": 0,    // Full map or small map
 				"serverType": 2,    // Settings Id
 				"gameMode": "64",   // Player Count
 				"teams": {
