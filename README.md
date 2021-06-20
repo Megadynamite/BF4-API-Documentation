@@ -18,7 +18,7 @@ Actually giving myself a schedule: The endpoints are ridiculous and there is onl
 # Idiotic Design Choices
 
 ### Capitalization
-Some titles are camelCase, some are lowercase, some are AllWordsCapitazized, and some they forgot about the capitalization in general. This idiosyncrasy is even present in the endpoints with identical naming formats where only one word is different. e.g. warsawWeaponsPopulate warsawvehiclesPopulate.
+Some titles are camelCase, some are lowercase, some are PascalCase, and some they forgot about the capitalization in general. This idiosyncrasy is even present in the endpoints with identical naming formats where only one word is different. e.g. warsawWeaponsPopulate warsawvehiclesPopulate.
 ### Repetition and Irrelevant Information
 The same information is given multiple times in a return, with no changes in format or what it references. Some endpoints return information never even used by the webpage where they are called.
 ### Blank Values
