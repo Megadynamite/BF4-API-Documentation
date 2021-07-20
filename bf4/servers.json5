@@ -1,46 +1,46 @@
 {
-    'template':'serverbrowserwarsaw.warsawshow',
+    'template':'serverbrowserwarsaw.warsawshow',                                // HTML template to format to                       str
     'globalContext':{
-        'currentUrl':'|bf4|servers|show|xboxone|942ed2fd-cca2-4139-990a-179fc5d0d4dd|DICE-BF4-NIGHT-OPERATIONS-LARGE-Normal-360957|',
-        'isAjaxFetch':False,
-        'currentCanonicalURL':'http://battlelog.battlefield.com/bf4/serverbrowserwarsaw/show/xboxone/942ed2fd-cca2-4139-990a-179fc5d0d4dd/DICE-BF4-NIGHT-OPERATIONS-LARGE-Normal-360957/',
-        'useIdentity2RedirectFlow':True,
+        'currentUrl':'|bf4|servers|show|xboxone|942ed2fd-cca2-4139-990a-179fc5d0d4dd|DICE-BF4-NIGHT-OPERATIONS-LARGE-Normal-360957|',   // Current url with / replaced to |                                         str
+        'isAjaxFetch':False,                                                    // AJAX fetch                                       bool
+        'currentCanonicalURL':'http://battlelog.battlefield.com/bf4/serverbrowserwarsaw/show/xboxone/942ed2fd-cca2-4139-990a-179fc5d0d4dd/DICE-BF4-NIGHT-OPERATIONS-LARGE-Normal-360957/',  //Full url with name    str
+        'useIdentity2RedirectFlow':True,                                        // Something oauth?                                 bool
         'session':{
-            'hasAdminAccess':False,
-            'originLaunch':False,
+            'hasAdminAccess':False,                                             // EA/DICE admin                                    bool
+            'originLaunch':False,                                               // No idea                                          bool
             'userProducts':{
                 
-            },
+            },                                                                  // Empty
             'npxExploration':{
                 
-            },
+            },                                                                  // Empty
             'locale':{
-                'shortdate':'%d/%m',
-                'fulldate':'%Y-%m-%d',
-                'offset':0,
-                'time':'%H:%M'
+                'shortdate':'%d/%m',                                            // Unpadded date without year, strftime format      str
+                'fulldate':'%Y-%m-%d',                                          // Padded date with year, strftime format           str
+                'offset':0,                                                     // UTC offset? Always 0                             int 
+                'time':'%H:%M'                                                  // Time, strftime format
             },
-            'introSectionBits':4294967295,
-            'userId':'0',
-            'postChecksum':'b756b595fc',
+            'introSectionBits':4294967295,                                      // No clue                                          int
+            'userId':'0',                                                       // userId, always 0                                 int
+            'postChecksum':'b3r3f02ae45',                                       // Checksum for something                           int - hex
             'facebook':{
                 
             },
-            'user':None,
-            'isLoggedIn':False,
+            'user':None,                                                        // Facebook user                                    str/null
+            'isLoggedIn':False,                                                 // Logged in                                        bool
             'rollouts':[
                 
             ],
-            'userGameExpansions':{
+            'userGameExpansions':{                                              // Empty                                            str(int){}
                 
             },
-            'userGames':{
+            'userGames':{                                                       // Empty                                            str(int){}
                 
             }
         },
-        'systemUtcTime':1626814517,
-        'mutedSounds':0,
-        'bf4trialbannerActive':True,
+        'systemUtcTime':1626814517,                                             // Time accessed                                    int
+        'mutedSounds':0,                                                        // Notifications                                    int
+        'bf4trialbannerActive':True,                                            // Some banner                                      bool
         'staticPrefix':'//cdn.battlelog.com/bl-cdn/cdnprefix/1323198',
         'searchQuery':None,
         'realm':{
@@ -200,7 +200,7 @@
             'ELIMINATION':16777216,
             'TURFWARSMALL':536870912
         },
-        'cookieConsentEnabled':True,
+        'cookieConsentEnabled':False,
         'socialSharingEnabled':False,
         'facebookOpenGraphEnabled':False,
         'friends':[
