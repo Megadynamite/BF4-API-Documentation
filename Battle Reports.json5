@@ -1,22 +1,22 @@
 // Note that the endpoint returns 10 games at a time, 1-9 were removed from this example for clarity
 
 {
-	"type": "success",	// Denotes request response
-	"message": "OK",	// Name of status code
+	"type": "success",	// Denotes request response										str
+	"message": "OK",	// Name of status code											str
 	"data": {
 		"gameReports": [
 			{
-				"persistedId": "b468cb2b-7615-4b05-b231-f0f923f7efe8",	// Server Id
-				"map": "MP_Prison", // Map Codename
-				"winner": 1,  // Winner, see 'teamToFaction' below
-				"maxPlayerCount": 0,    // No idea
+				"persistedId": "b468cb2b-7615-4b05-b231-f0f923f7efe8",	// Server Id					str
+				"map": "MP_Prison", // Map Codename									str
+				"winner": 1,  // Winner, see 'teamToFaction' below							int
+				"maxPlayerCount": 0,    // No idea									int
 				"teamToFaction": {
-					"1": "US",  // Team 1 faction
-					"2": "RU"   // Team 2 faction
+					"1": "US",  // Team 1 faction									str
+					"2": "RU"   // Team 2 faction									str
 				},
-				"mapVariant": 0,    // Full map or small map
-				"serverType": 2,    // Settings Id
-				"gameMode": "64",   // Player Count
+				"mapVariant": 0,    // Full map or small map								int
+				"serverType": 2,    // [Official, ranked, custom, unranked]						int			
+				"gameMode": "64",   // Player Count									str(int)
 				"teams": {
 					"1": {
 						"tickets": null,                // Rush Tickets						int/null
