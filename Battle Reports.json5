@@ -1,7 +1,7 @@
 // Note that the endpoint returns 10 games at a time, 1-9 were removed from this example for clarity
 
 {
-	"type": "success",	// Denotes request response. 
+	"type": "success",	// Denotes request response
 	"message": "OK",	// Name of status code
 	"data": {
 		"gameReports": [
@@ -19,22 +19,22 @@
 				"gameMode": "64",   // Player Count
 				"teams": {
 					"1": {
-						"tickets": null,                // Rush Tickets
-						"bags": null,                   
-						"titanHealth": null,            // Carrier Assault Carrier Health
-						"name": "US",                   // Faction Name
-						"achievedObjectives": null,     // I Assume Rush Objectives
-						"commanders": [],               // Always empty. Not sure why
-						"isWinner": true,               // Team won the match
-						"cash": null,                   // No idea. They may have added this so they could use the same api for hardline
-						"cashNeeded": null,             // No idea. Also guessing hardline
-						"players": [],                  // Also Always empty
-						"score": 768,                   // Score at end of match
-						"scoreMax": 1200,               // Starting or ending score depening on gamemode
-						"squads": {},                   // Also empty
-						"isAttacker": null,             // Rush attacker
-						"bagsNeeded": null,             // No idea. Still thinking hardline
-						"id": 1                         // Same meaning as the name for this array
+						"tickets": null,                // Rush Tickets						int/null
+						"bags": null,                   // No idea, possible Hardline				int/null (guess)
+						"titanHealth": null,            // Carrier Assault Carrier Health			int/null
+						"name": "US",                   // Faction Name						str
+						"achievedObjectives": null,     // I Assume Rush Objectives				int[]
+						"commanders": [],               // Always empty. Not sure why				null[]
+						"isWinner": true,               // Team won the match					bool
+						"cash": null,                   // No idea, possible hardline				int/null
+						"cashNeeded": null,             // No idea, possible hardline				int/null
+						"players": [],                  // Also Always empty					null[]
+						"score": 768,                   // Score at end of match				int
+						"scoreMax": 1200,               // Starting or ending score depening on gamemode	int
+						"squads": {},                   // Also empty						null{}
+						"isAttacker": null,             // Rush attacker					bool/null
+						"bagsNeeded": null,             // No idea, possible hardline				int/null
+						"id": 1                         // Same meaning as the name for this array		int
 					},
 					"2": {
 						"tickets": null,
@@ -57,13 +57,13 @@
 				},
 				"initialMapValues": { 
 					"1": {                          // Team 1
-						"initialTickets": 1200          // Initial tickets
+						"initialTickets": 1200          // Initial tickets					int
 					},
 					"2": {                          // Team 2
-						"initialTickets": 1200          // Initial tickets
+						"initialTickets": 1200          // Initial tickets					int
 					}
 				},
-				"players": {},                      // Empty
+				"players": {},                      	// Empty
 				"player": {
 					"deaths": null,
 					"userId": null,
@@ -71,7 +71,7 @@
 					"killAssists": null,
 					"skill": null,
 					"heals": null,
-					"personaId": "1297551640",
+					"personaId": "1297551640",	// Lookup user
 					"dnf": null,
 					"firstGrapplingHook": null,
 					"revives": null,
@@ -89,10 +89,10 @@
 					"isCommander": null,
 					"isSoldier": null               // Empty
 				},
-				"ranked": true,                     // Ranked or unranked match
+				"ranked": true,                     // Ranked or unranked match						bool
 				"playerTeams": {
 					"1": [                          // Team 1
-						"194840022",                // Team 1 Player Ids
+						"194840022",                // Team 1 Player Ids					str(int)[]
 						"234002318",
 						"235347130",
 						"182553622",
@@ -175,26 +175,26 @@
 				},
 				"mapModeResult": {                  
 					"ticket": {                     // Tickets Remaining
-						"1": 768,                   // Team 1 Tickets Remaining
-						"2": 0                      // Team 2 Tickets Remaining
+						"1": 768,                   // Team 1 Tickets Remaining					int
+						"2": 0                      // Team 2 Tickets Remaining					int
 					}
 				},
-				"duration": 1233,                           // Match Duration in Seconds
-				"reportType": "mp",                         // I assume multiplayer
-				"gameReportId": "1297020801971029824",      // Static Game Id
-				"createdAt": 1598070072,                    // UNIX Timestamp            
-				"name": "[KOBK] 3"                          // Server Name
+				"duration": 1233,                           // Match Duration in Seconds				int
+				"reportType": "mp",                         // Multiplayer, not sure the other options			str
+				"gameReportId": "1297020801971029824",      // Static Game Id						str(int)
+				"createdAt": 1598070072,                    // UNIX Timestamp            				int
+				"name": "[KOBK] 3"                          // Server Name						str
 			}
 		],
-		"personaId": 1297551640,                                    // personaId of lookup user
-		"statsTemplate": "profile.warsawbattlereportspopulate",     // The endpoint returning itself? Not Sure
-		"isActiveUser": true,                                       // Is authenticated user
-		"userId": "2955060617649540577",                            // userId of lookup user
-		"platform": 64,                                             // platformId
-		"game": 2048,                                               // gameId
-		"isReportOwnerPremium": false,                              // lookup user premium status
-		"favGameReportIds": [],                                     // list of lookup user's favorited game Ids
-		"showFeedAndGameActivity": true,                            // authencicated user's publicity status
-		"favGameReports": []                                        // List of lookup user's favorited games
+		"personaId": 1297551640,                                    // personaId of lookup user					int
+		"statsTemplate": "profile.warsawbattlereportspopulate",     // HTML template to format data into			str			
+		"isActiveUser": true,                                       // Is authenticated user					bool
+		"userId": "2955060617649540577",                            // userId of lookup user					str(int)
+		"platform": 64,                                             // platformId						int
+		"game": 2048,                                               // gameId							int
+		"isReportOwnerPremium": false,                              // lookup user premium status				bool
+		"favGameReportIds": [],                                     // List of lookup user's favorited game Ids			str(int)[]
+		"showFeedAndGameActivity": true,                            // Authencicated user's publicity status			bool
+		"favGameReports": []                                        // List of lookup user's favorited games			obj[]
 	}
 }
